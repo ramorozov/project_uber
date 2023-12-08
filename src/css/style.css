@@ -144,3 +144,74 @@ nav{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.advantages{
+    padding: 20px 0 64px 0;
+}
+
+.advantages .advantages_header{
+    margin: 0 auto;
+    height: 24px;
+    width: 113px;
+    line-height: 24px;
+    background-color: black;
+    text-align: center;    
+}
+
+.advantages .advantages_header .header_text{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;    
+}
+
+.advantages .advantages_subheader{
+    margin-top: 33px;
+    color: #222;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages .advantages_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.advantages .advantages_block .advantages_around{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    width: 116px;
+    height: 116px;
+    border-radius: 100%;
+    background-color: #1EACC7;
+}
+
+.advantages .advantages_block .advantages_descr{
+    width: 371px;
+}
+
+.advantages .advantages_block .advantages_descr .advantages_title{
+    color: #1EACC7;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.advantages .advantages_block .advantages_descr .advantages_text{
+    color: #202020;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;    
+}
