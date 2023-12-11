@@ -1,10 +1,16 @@
+$positive_color: #1EACC7
+
 * 
 	font-family: 'Roboto', sans-serif 
 header 
-	position: relative 
+	position: relative
+	height: 50px 
 nav 
+	position: fixed
 	min-height: 50px 
-	background-color: #212121 
+	background-color: #212121
+	width: 100%
+	z-index: 2 
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -21,7 +27,8 @@ nav
 		border-right: 2px dotted black 
 		padding-right: 32px 
 .subheader 
-	position: absolute 
+	position: absolute
+	top: 50px 
 	width: 100% 
 	min-height: 87px 
 	background-color: rgba(0, 0, 0, .6) 
@@ -112,22 +119,31 @@ nav
 		font-style: normal 
 		font-weight: 400 
 		text-transform: uppercase
-.lable 
+.lable
+	position: relative 
 	margin: 0 auto 
 	height: 24px 
 	width: 113px 
 	line-height: 24px 
 	background-color: black 
-	text-align: center 
-	.lable_text 
+	text-align: center
+	z-index: 2
+	&_white
+		background-color: #fff
+	&_text 
 		display: inline-block 
 		vertical-align: middle 
 		color: #FFF 
 		font-size: 11px 
 		font-style: normal 
 		font-weight: 400 
-		text-transform: uppercase 
+		text-transform: uppercase
+		z-index: 2
+		&_white
+			color: #222
+
 .title
+	position: relative
 	margin-top: 33px 
 	color: #222 
 	text-align: center 
@@ -135,12 +151,21 @@ nav
 	font-style: normal 
 	font-weight: 700 
 	text-transform: uppercase
+	z-index: 2
+	&_white
+		color: #fff
+		margin-top: 27px
+
 .subtitle
+	position: relative
 	color: #222
 	text-align: center
 	font-size: 17px
 	font-style: normal
-	font-weight: 400 
+	font-weight: 400
+	z-index: 2
+	&_white
+		color: #fff
 .advantages 
 	padding: 20px 0 64px 0
 	.advantages_block 
@@ -156,11 +181,11 @@ nav
 			width: 116px 
 			height: 116px 
 			border-radius: 100% 
-			background-color: #1EACC7 
+			background-color: $positive_color 
 		.advantages_descr 
 			width: 371px 
 			.advantages_title 
-				color: #1EACC7 
+				color: $positive_color 
 				font-size: 17px 
 				font-style: normal 
 				font-weight: 400 
@@ -216,3 +241,28 @@ nav
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
+.auto
+	position: relative
+	min-height: 897px
+	padding: 59px 0 137px 0
+	background: url('../img/mobile_bg.jpg') center center/cover no-repeat
+	&_img
+		position: relative
+		display: block
+		margin: 54px auto 0 auto
+		z-index: 2
+	&_descr
+		color: #222
+		text-align: center
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		line-height: 24px
+	.black
+		height: 502px 
+		position: absolute
+		background-color: #070716
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 1	
