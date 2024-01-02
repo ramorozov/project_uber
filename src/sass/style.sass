@@ -292,8 +292,48 @@ nav
 		left: 0
 		width: 100%
 		z-index: 1
-.conditions
+.require
 	min-height: 920px
+	padding: 68px 0 90px 0
+	&_title
+		margin-top: 37px
+		color: $positive_color
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 20px
+		li
+			position: relative
+			color: #222
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			margin-bottom: 10px
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: -33px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/checkbox_blue_icon.png') center center/cover no-repeat
+	&_descr
+		margin: 25px 0 24px 0
+		color: $positive_color
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		&_nrd
+			margin-bottom: 0
+	.warning
+		color: $warning_color
+		li
+			&:before
+				background: url('../icons/checkbox_red_icon.png') center center/cover no-repeat
 .world
 	position: relative
 	min-height: 720px
@@ -378,9 +418,11 @@ footer
 			width: 100%
 .footer_lang
 	margin-top: 16px
-	color: $positive_color
 	text-align: center
-	font-size: 11px
-	font-style: normal
-	font-weight: 400
-	text-transform: uppercase
+	&_link
+		color: $positive_color		
+		font-size: 11px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+		text-decoration: none
