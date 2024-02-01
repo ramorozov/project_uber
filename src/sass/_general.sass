@@ -6,7 +6,7 @@ nav
 	min-height: 50px 
 	background-color: #212121
 	width: 100%
-	z-index: 2 
+	z-index: 3 
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -21,7 +21,9 @@ nav
 		text-decoration-line: none 
 	&_item 
 		border-right: 2px dotted black 
-		padding-right: 32px 
+		padding-right: 32px
+		&:last-child
+			border-right: none			 
 .subheader 
 	position: absolute
 	top: 50px 
