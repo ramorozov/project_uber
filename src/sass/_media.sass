@@ -56,6 +56,57 @@
     .auto
         &_img
             width: 100%
+    footer
+        position: relative
+        min-height: 245px
+        padding: 25px 18px 20px 18px
+    .footer_wrapper
+        flex-direction: column
+        margin-top: 22px
+    .footer_lang
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 103px
+    .footer_divider
+        width: 301px
+        height: 7px
+    .footer_about
+        width: 65%
+        order: 1
+        &_link
+            &_main
+                &_item
+                    font-size: 14px
+                    font-weight: 300
+            &_second
+                margin-top: 13px
+                &_item
+                    font-size: 11px
+    .footer_social
+        width: 100%
+        order: 2
+        margin: 0 auto
+        justify-content: center
+        margin-top: 53px
+        &_link
+            width: 35px
+            height: 35px
+            margin: 0
+            margin-right: 7px
+            &:last-child
+                margin-right: 0
+    .footer_store
+        width: 100%
+        order: 3
+        margin: 0 auto
+        justify-content: center
+        margin-top: 20px
+        &_link
+            margin-left: 0
+            margin-right: 7px
+            &:last-child
+                margin-right: 0
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -122,8 +173,8 @@
             margin-top: 6px
     .promo
         &_title
-            line-height: 45px
-@media (max-width: 575px)
+            line-height: 45px                  
+@media (max-width: 576px)
     nav
         min-height: 30px
     header
@@ -236,3 +287,29 @@
         padding: 25px 0 30px 0
         &_descr
             margin-top: 216px
+    .footer_divider
+        width: 253px
+        height: 4px
+    .footer_about
+        width: 100%
+        &_link
+            &_second
+                flex-wrap: wrap
+                justify-content: space-between
+                &_item
+                    padding: 0 7px
+    .footer_social
+        &_link
+            width: 20px
+            height: 20px
+            i
+                font-size: 10px
+    .footer_store
+        &_link
+            img
+                height: 24px
+                width: 80px
+    .footer_lang
+        top: 114px
+        &_link
+            font-size: 11px
